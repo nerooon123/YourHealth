@@ -1,0 +1,34 @@
+﻿<Page x:Class="YourHealth.View.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:YourHealth.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizationPage">
+
+    <Grid>
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Привет Вам!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+
+                <Grid Margin="0 0 0 20">
+
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="ЛОГИН:" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                        <TextBox x:Name="LoginTextBox" VerticalAlignment="Center" FontSize="25"/>
+                        <TextBlock Text="ПАРОЛЬ:" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+                        <PasswordBox x:Name="PasswordTextBox" VerticalAlignment="Center" FontSize="25"/>
+                        <Button x:Name="LogIn" Click="LogIn_Click" Content="Войти" FontWeight="Bold" FontSize="20" Padding="10" Background="DeepSkyBlue"/>
+                        <Button x:Name="SigIn" Click="SigIn_Click" Content="Регистрация" FontWeight="Bold" FontSize="20" Padding="10" Background="DeepSkyBlue"/>
+                    </UniformGrid>
+
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
